@@ -1,0 +1,78 @@
+.orderChecking {
+  background-color: #EBFFEC;
+  padding: 20px 10px;
+  height: 100vh;
+}
+
+.orderCheckingContent {
+  background-color: #fff;
+  padding: 0px 20px 10px;
+}
+.orderCheckingContent h3 {
+  margin: 0;
+  padding: 10px 0;
+}
+
+.orderCheckingContent__product {
+  display: flex;
+  font-size: 14px;
+  border-bottom: 1px solid #ddd;
+  margin-bottom: 10px;
+}
+.orderCheckingContent__product ul {
+  list-style: none;
+}
+
+.orderCheckingContent__bill {
+  padding-bottom: 10px;
+  border-bottom: 1px solid #ddd;
+}
+.orderCheckingContent__bill--item {
+  color: #606060;
+  display: flex;
+  justify-content: space-between;
+  font-size: 14px;
+}
+.orderCheckingContent__bill--item p {
+  margin: 2px 0;
+}
+
+.orderCheckingContent__position {
+  list-style: none;
+  font-size: 13px;
+  padding-left: 20px;
+}
+
+.orderCheckingContent__position--item {
+  display: flex;
+  padding-bottom: 10px;
+  position: relative;
+}
+.orderCheckingContent__position--item p {
+  margin: 0;
+}
+.orderCheckingContent__position--item strong {
+  min-width: 80px;
+}
+.orderCheckingContent__position--item::before {
+  content: '';
+  width: 10px;
+  height: 10px;
+  background-color: #5FBA68;
+  border-radius: 50%;
+  position: absolute;
+  top: 4px;
+  left: -18px;
+}
+.orderCheckingContent__position--item::after {
+  content: '';
+  width: 4px;
+  height: 100%;
+  background-color: #5FBA68;
+  position: absolute;
+  top: 4px;
+  left: -15px;
+}
+.orderCheckingContent__position--item:last-child::after {
+  height: 0;
+}

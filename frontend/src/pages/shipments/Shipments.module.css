@@ -1,0 +1,19 @@
+.map {
+    position: relative;
+}
+
+.map .top__bar {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 3.6rem;
+    background-color: white;
+    z-index: 1;
+}
+
+.bus__map {
+    border: none;
+    width: 100vw;
+    height: 85vh;
+}

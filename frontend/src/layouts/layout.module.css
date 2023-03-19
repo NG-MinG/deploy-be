@@ -1,0 +1,46 @@
+.navbar {
+    display: flex;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    padding: 1.2rem;
+    gap: 1rem;
+    align-items: center;
+    background-color: #226B2E;
+    z-index: 1;
+}
+
+.navbar .navbar__item > svg {
+    font-size: 1.5rem;
+}
+
+.navbar .navbar__item {
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-weight: 600;
+    gap: .2rem;
+}
+
+.navbar a.navbar__item {
+    text-decoration: none;
+    color: white;
+}
+
+.navbar .navbar__item > .qrcode_btn {
+    font-size: 3rem;
+    position: absolute;
+    left: 50%;
+    top: 0%;
+    border: none;
+    background-color: #5FBA68;
+    color: white;
+    box-shadow: 0rem 0rem 0.5rem 0.1rem rgba(0, 0, 0, 0.15);
+    width: 5.5rem;
+    height: 5.5rem;
+    border-radius: 50%;
+    -webkit-transform: translate(-50%, -50%);
+            transform: translate(-50%, -50%);
+}

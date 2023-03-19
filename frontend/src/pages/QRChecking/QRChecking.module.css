@@ -1,0 +1,125 @@
+.QRChecking {
+  color: #226B2E;
+  background-color: #EBFFEC;
+  height: 100vh;
+  position: relative;
+}
+
+.QRChecking h2 {
+  text-align: center;
+  margin: 0;
+  padding-top: 20px;
+}
+
+.QRChecking__qr {
+  border: 1px solid #A6DCB2;
+  border-radius: 10px;
+  margin: 30px 40px;
+  background-color: #fff;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.QRChecking__info {
+  list-style: none;
+}
+.QRChecking__info li {
+  display: flex;
+  margin: 6px 0;
+}
+.QRChecking__info li strong {
+  width: 80px;
+}
+.QRChecking__info li p {
+  margin: 0;
+}
+
+.QRChecking__package {
+  list-style: none;
+  margin-top: 30px;
+}
+.QRChecking__package li {
+  display: flex;
+  margin: 6px 0;
+}
+.QRChecking__package li strong {
+  width: 230px;
+}
+.QRChecking__package li p {
+  margin: 0;
+}
+
+.modal {
+  position: fixed;
+  width: 100vw;
+  height: 100vh;
+  background-color: #A6DCB2;
+}
+.modal__content {
+  background-color: #fff;
+  width: 90%;
+  margin: 20px auto;
+  padding: 30px 10px;
+  opacity: 1;
+}
+.modal__content--route {
+  position: relative;
+}
+.modal__content--route input {
+  padding: 10px;
+}
+.modal__content--route-list {
+  position: absolute;
+  list-style: none;
+  font-size: 14px;border: 1px solid #dddd;
+  background-color: #fff;
+  top: 100%;
+  margin: 0;
+  padding: 0;
+  z-index: 100;
+}
+.modal__content--route-list li {
+  padding: 10px 20px;
+  border-bottom: 1px solid #dddddd;
+}
+.modal__content--route-list li:hover {
+  background-color: #A6DCB2;
+}
+
+.modal__content--station {
+  margin-top: 20px;
+  width: calc(100% - 20px);
+  position: relative;
+}
+.modal__content--station input {
+  padding: 10px;
+  width: 100%;
+}
+.modal__content--station-list {
+  position: absolute;
+  list-style: none;
+  font-size: 14px;border: 1px solid #dddd;
+  background-color: #fff;
+  top: 100%;
+  margin: 0;
+  padding: 0;
+  height: 200px;
+  overflow-y: scroll;
+}
+.modal__content--station-list li {
+  padding: 10px;
+  border-bottom: 1px solid #ddd;
+}
+
+.modal__btn {
+  padding: 10px;
+  background-color: #226B2E;
+  color: #fff;
+  border-radius: 4px;
+  margin-top: 30px;
+  text-align: center;
+}
+.modal__btn:hover {
+  opacity: 0.7;
+}

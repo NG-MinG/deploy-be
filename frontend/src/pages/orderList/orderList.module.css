@@ -1,0 +1,32 @@
+.orderList {
+  
+}
+
+.orderList h3 {
+  background-color: #226B2E;
+  color: #fff;
+  padding: 14px;
+  margin-top: 0;
+}
+
+.orderList__list {
+  margin: 16px;
+}
+
+.orderList__list--item {
+  border-bottom: 1px solid #ddd;
+  display: flex;
+  justify-content: center;
+}
+
+.orderList__list--item ul {
+  list-style: none;
+  font-size: 13px;
+}
+.orderList__list--item ul strong {
+  padding: 2px 0;
+}
+
+.orderList__list--item ul li {
+  padding: 2px 0;
+}

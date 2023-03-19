@@ -1,0 +1,23 @@
+.myOrder {
+  padding: 20px 10px;
+}
+
+.myOrder__btn {
+  margin: 20px 0;
+  float: right;
+}
+
+.myOrder__btn--cancel, .myOrder__btn--next {
+  padding: 12px;
+  min-width: 100px;
+  color: #fff;
+  border: none;
+  border-radius: 8px;
+}
+.myOrder__btn--next {
+  background-color: #32A445;
+  margin-left: 10px;
+}
+.myOrder__btn--cancel {
+  background-color: rgb(255, 66, 66);
+}
