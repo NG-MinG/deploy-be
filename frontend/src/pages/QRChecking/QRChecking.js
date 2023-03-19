@@ -16,7 +16,7 @@ const QRChecking = () => {
 
   useEffect(() => {
     const fetchStation = async () => {
-      const data = await axios.get('http://127.0.0.1:5000/api/v1/stations');
+      const data = await axios.get('https://busl-be.onrender.com/api/v1/stations');
       setDataRoute(data?.data?.data);
     }
     fetchStation();
@@ -24,7 +24,7 @@ const QRChecking = () => {
 
   useEffect(() => {
     const fetchCheckin = async () => {
-      const dt = await axios.get(`http://127.0.0.1:5000/api/v1/orders?numRoute=${dataRoute[route]?.id}&nameStation=${station}`);
+      const dt = await axios.get(`https://busl-be.onrender.com/api/v1/orders?numRoute=${dataRoute[route]?.id}&nameStation=${station}`);
       setData(dt.data.data);
     }
     fetchCheckin();
@@ -70,14 +70,14 @@ const QRChecking = () => {
       <div className={classes.QRChecking__qr}>
         {localStorage?.role === 'user' ? <QRCode
           id='qrcode'
-          value={`http://127.0.0.1:5000/api/v1/checking/US121`}
+          value={`https://busl-be.onrender.com/api/v1/checking/US121`}
           size={190}
           level={'H'}
           includeMargin={true}
         />
         : <QRCode
           id='qrcode'
-          value={`http://127.0.0.1:5000/api/v1/checking/delivery-check?data=${JSON.stringify(delivery)}`}
+          value={`https://busl-be.onrender.com/api/v1/checking/delivery-check?data=${JSON.stringify(delivery)}`}
           size={190}
           level={'H'}
           includeMargin={true}

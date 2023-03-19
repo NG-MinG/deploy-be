@@ -4,7 +4,7 @@ import { useLocation } from 'react-router';
 import classes from './OrderChecking.module.css';
 import io from 'socket.io-client';
 
-const socket = io.connect('http://127.0.0.1:5000/api/v1');
+const socket = io.connect('https://busl-be.onrender.com/api/v1');
 
 const OrderChecking = () => {
   const [data, setData] = useState();
@@ -12,7 +12,7 @@ const OrderChecking = () => {
 
   useEffect(() => {
     const fetchData = async () => {
-      const res = await axios.get(`http://127.0.0.1:5000/api/v1/orders/${path.pathname.split('/')[3]}`)
+      const res = await axios.get(`https://busl-be.onrender.com/api/v1/orders/${path.pathname.split('/')[3]}`)
       console.log(res.data.data);
       setData(res.data.data);
     }

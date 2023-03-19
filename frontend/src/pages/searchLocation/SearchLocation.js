@@ -18,14 +18,14 @@ const SearchLocation = ({textSearch, setCoor, setTextSearch, submitOrder}) => {
     //   setCoor(data.data.results[0].geometry)
     // }
     // console.log(coor);
-    const data = await axios.get(`http://localhost:5000/api/v1/locate?address=${textSearch}`);
+    const data = await axios.get(`https://busl-be.onrender.com/api/v1/locate?address=${textSearch}`);
     setCoor(data.data.geometry);
   }
 
   const [address_l, setAddress] = useState([]);
 
   useEffect(() => {
-    axios.get('http://localhost:5000/api/v1/locate')
+    axios.get('https://busl-be.onrender.com/api/v1/locate')
     .then(res => {
       setAddress(res.data.geometry.data);
     })

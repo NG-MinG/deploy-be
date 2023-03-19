@@ -16,7 +16,7 @@ const Shipments = () => {
     useEffect(() => {
         if (coor.lng && coor.lat) {
             setLoading(true);
-            axios.post('http://localhost:5000/api/v1/shipments', { 
+            axios.post('https://busl-be.onrender.com/api/v1/shipments', { 
                 params: {
                     start: `${langsrc}_${latsrc}`,
                     end: `${coor.lng}_${coor.lat}`
@@ -47,7 +47,7 @@ const Shipments = () => {
             alert('Vui lòng nhập địa chỉ giao hàng');
             return;
         }
-        axios.post('http://localhost:5000/api/v1/order', {
+        axios.post('https://busl-be.onrender.com/api/v1/order', {
             params:{
                 start_address: '255 Đường Nguyễn Văn Cừ, Phường Ngọc Lâm, Quận Long Biên, Hà Nội',
                 end_address: textSearch,
